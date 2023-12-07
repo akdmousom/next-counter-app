@@ -11,6 +11,11 @@ const Counter = () => {
     }
 
     const decrease = () =>{
+        if (count === 0) {
+
+            return
+            
+        }
         setCount(count - 1)
     }
 
@@ -18,8 +23,8 @@ const Counter = () => {
         <div >
             <h1 className=" text-3xl text-center font-bold">Count: {count} </h1>
             <div className="flex gap-4 justify-center my-4">
-                <button className="btn btn-primary">Decrease </button>
-                <button className="btn btn-primary">Increase </button>
+                <button onClick={decrease} className="btn btn-primary">Decrease </button>
+                <button onClick={increase} className="btn btn-primary">Increase </button>
             </div>
         </div>
     );
