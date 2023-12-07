@@ -19,4 +19,4 @@ bun dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ### Technology using for this project
--- Next JS
+- Next JS
